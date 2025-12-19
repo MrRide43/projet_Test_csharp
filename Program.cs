@@ -124,6 +124,7 @@ string indication = "";
 }
 
 Console.WriteLine("test git hub");
+Console.WriteLine("Test 2 github");
 
 // Exemple de fonction en c#
 //int result = GetResultNumber(2, 3);
