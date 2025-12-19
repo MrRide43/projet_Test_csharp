@@ -124,7 +124,7 @@ string indication = "";
 }
 
 Console.WriteLine("test git hub");
-Console.WriteLine("Test 2 github");
+Console.WriteLine("Test 2 github mofication sur la branche 2");
 
 // Exemple de fonction en c#
 //int result = GetResultNumber(2, 3);
