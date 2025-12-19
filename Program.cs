@@ -125,6 +125,7 @@ string indication = "";
 
 Console.WriteLine("test git hub");
 Console.WriteLine("Test 2 github mofication sur la branche 2");
+Console.WriteLine("Test commit et push avec identifiant à mon nom");
 
 // Exemple de fonction en c#
 //int result = GetResultNumber(2, 3);
