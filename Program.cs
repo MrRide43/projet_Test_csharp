@@ -68,22 +68,25 @@ string indication = "";
  while (gagne == false)
 {
     Console.Clear();
-    
-        Console.WriteLine("vos Tentative précédente :");
-        foreach (var item in chiffreRentrer)
-        {
-            Console.WriteLine($"{item}");
-        }
-        Console.WriteLine();
 
+        if (chiffreRentrer is not [])
+        {
+            Console.Write("vos Tentative précédente :");
+            foreach (var item in chiffreRentrer)
+            {
+                Console.Write($"{item}");
+            }
+            Console.WriteLine();
+        }
         if (!string.IsNullOrEmpty(indication))
         {
             Console.WriteLine(indication);
         }
 
+
     Console.WriteLine("Saisir un nombre :");
     string chiffre = Console.ReadLine();
-
+    chiffreRentrer.Add(int.Parse(chiffre));
 
     // gestion utilisateur qui rentre un champ vide 
     if (string.IsNullOrEmpty(chiffre))
@@ -104,9 +107,6 @@ string indication = "";
         continue;
     }
 
-    chiffreRentrer.Add(int.Parse(chiffre));
-
-
         //partie condition pour guider l'utilisateur
         if (chiffreInt > chiffreAleatoire)
         {
@@ -124,9 +124,7 @@ string indication = "";
 }
 
 Console.WriteLine("test git hub");
-Console.WriteLine("Test 2 github mofication sur la branche 2");
-Console.WriteLine("Test commit et push avec identifiant à mon nom 2");
-Console.WriteLine("Test commit et push avec identifiant à mon nom");
+Console.WriteLine("Test 2 github");
 
 // Exemple de fonction en c#
 //int result = GetResultNumber(2, 3);
